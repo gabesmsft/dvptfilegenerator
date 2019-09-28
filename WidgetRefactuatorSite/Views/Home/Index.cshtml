@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model WidgetRefactuatorSite.Models.RefactuateModel
+
+<div>
+    @using (Html.BeginForm("Refactuator", "Home", FormMethod.Post))
+    {
+        @Html.TextBoxFor(model => model.FileName)
+        <button type="submit">Refactuate</button>
+    }
+
+    @ViewBag.FileName 
+</div>
