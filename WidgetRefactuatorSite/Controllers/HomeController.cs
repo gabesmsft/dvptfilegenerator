@@ -23,7 +23,6 @@ namespace WidgetRefactuatorSite.Controllers
         {
             string filename = model.FileName;
             Widget widget = new Widget(filename);
-            ViewBag.FileName = filename;
             try
             {
 
